@@ -30,9 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtname = new System.Windows.Forms.TextBox();
+            this.txtpass = new System.Windows.Forms.TextBox();
+            this.btnenter = new System.Windows.Forms.Button();
+            this.txtresult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -53,37 +54,47 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "password";
             // 
-            // textBox1
+            // txtname
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 26);
-            this.textBox1.TabIndex = 2;
+            this.txtname.Location = new System.Drawing.Point(157, 43);
+            this.txtname.Name = "txtname";
+            this.txtname.Size = new System.Drawing.Size(152, 26);
+            this.txtname.TabIndex = 2;
             // 
-            // textBox2
+            // txtpass
             // 
-            this.textBox2.Location = new System.Drawing.Point(161, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
-            this.textBox2.TabIndex = 3;
+            this.txtpass.Location = new System.Drawing.Point(161, 100);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Size = new System.Drawing.Size(148, 26);
+            this.txtpass.TabIndex = 3;
             // 
-            // button1
+            // btnenter
             // 
-            this.button1.Location = new System.Drawing.Point(114, 185);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 32);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "enter";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnenter.Location = new System.Drawing.Point(114, 185);
+            this.btnenter.Name = "btnenter";
+            this.btnenter.Size = new System.Drawing.Size(116, 32);
+            this.btnenter.TabIndex = 4;
+            this.btnenter.Text = "enter";
+            this.btnenter.UseVisualStyleBackColor = true;
+            this.btnenter.Click += new System.EventHandler(this.btnenter_Click);
+            // 
+            // txtresult
+            // 
+            this.txtresult.AutoSize = true;
+            this.txtresult.Location = new System.Drawing.Point(90, 266);
+            this.txtresult.Name = "txtresult";
+            this.txtresult.Size = new System.Drawing.Size(0, 20);
+            this.txtresult.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(376, 305);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtresult);
+            this.Controls.Add(this.btnenter);
+            this.Controls.Add(this.txtpass);
+            this.Controls.Add(this.txtname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -97,9 +108,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtname;
+        private System.Windows.Forms.TextBox txtpass;
+        private System.Windows.Forms.Button btnenter;
+        private System.Windows.Forms.Label txtresult;
     }
 }
 

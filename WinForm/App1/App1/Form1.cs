@@ -16,5 +16,10 @@ namespace App1
         {
             InitializeComponent();
         }
+
+        private void btnenter_Click(object sender, EventArgs e)
+        {
+            txtresult.Text = txtname.Text + "***" + txtpass.Text;
+        }
     }
 }
