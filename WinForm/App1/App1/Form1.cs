@@ -19,7 +19,7 @@ namespace App1
 
         private void btnenter_Click(object sender, EventArgs e)
         {
-            txtresult.Text = txtname.Text + "***" + txtpass.Text;
+            txtresult.Text = txtname.Text + "**111*" + txtpass.Text;
         }
     }
 }
